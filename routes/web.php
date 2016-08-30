@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('addresses', 'AddressController@getAll');
+
+//will need token logic
+Route::post('add', 'AddressController@create');
